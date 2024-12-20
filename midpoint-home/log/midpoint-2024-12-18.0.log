@@ -1,0 +1,478 @@
+2024-12-18 23:08:14,815 [] [main] INFO (com.evolveum.midpoint.web.boot.MidPointJarSignatureChecker): JAR signature verification succeeded for /opt/midpoint/lib/midpoint.jar
+2024-12-18 23:08:18,722 [] [main] INFO (org.springframework.boot.SpringApplication): 
+                   _ _____              _
+             _    | |  _  \     _     _| |_
+   ___ ____ (_) __| | |_) |___ (_)___|_   _|
+  |  _ ` _ `| |/ _  |  __/  _ \| |  _` | |
+  | | | | | | | (_| | |  | (_) | | | | | |_
+  |_| |_| |_|_|\____|_|  \____/|_|_| |_|\__|  by Evolveum and partners
+
+  Dual-licensed under Apache License 2.0 and European Union Public License.
+  Version: 4.9
+  Sources: https://github.com/Evolveum/midpoint, branch: master, build: v4.9
+  Bug reporting system: https://support.evolveum.com/
+  Product information: https://midpoint.evolveum.com
+
+
+2024-12-18 23:08:19,785 [] [main] INFO (com.evolveum.midpoint.web.boot.MidPointSpringApplication): Starting MidPointSpringApplication using Java 21.0.4 with PID 190 (/opt/midpoint/lib/midpoint.jar started by ? in /)
+2024-12-18 23:08:19,788 [] [main] INFO (com.evolveum.midpoint.web.boot.MidPointSpringApplication): No active profile set, falling back to 1 default profile: "default"
+2024-12-18 23:08:41,254 [] [main] INFO (com.evolveum.midpoint.init.ApplicationHomeSetup): midpoint.home = /opt/midpoint/var
+2024-12-18 23:08:41,320 [] [main] INFO (com.evolveum.midpoint.init.StartupConfiguration): Loading midPoint configuration from file /opt/midpoint/var/config.xml
+2024-12-18 23:08:51,926 [] [main] WARN (org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker): Bean 'noBeans' of type [java.util.ArrayList] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#0]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-12-18 23:08:55,544 [] [main] INFO (com.evolveum.midpoint.init.ConfigurablePrismContextFactory): Loading extension schemas from folder '/opt/midpoint/var/schema'.
+2024-12-18 23:09:39,121 [] [main] INFO (com.evolveum.midpoint.prism.impl.crypto.KeyStoreBasedProtectorImpl): Using file keystore at /opt/midpoint/var//keystore.jceks
+2024-12-18 23:09:40,485 [] [main] INFO (com.evolveum.midpoint.repo.sqlbase.DataSourceFactory): Loading datasource.
+2024-12-18 23:09:40,500 [] [main] INFO (com.evolveum.midpoint.repo.sqlbase.DataSourceFactory): Constructing datasource 'mp-repo' with connection pooling; JDBC URL: jdbc:postgresql://midpoint_data:5432/midpoint?ApplicationName=mp-repo
+ Using driver: org.postgresql.Driver
+2024-12-18 23:09:47,707 [] [main] INFO (com.evolveum.midpoint.repo.sqale.UriCache): URI cache initialized with 1 items.
+2024-12-18 23:09:47,742 [] [main] INFO (com.evolveum.midpoint.repo.sqale.ExtItemCache): Ext item cache initialized with 0 items.
+2024-12-18 23:09:47,984 [] [main] INFO (com.evolveum.midpoint.repo.sqlbase.perfmon.SqlPerformanceMonitorImpl): SQL Performance Monitor initialized (level = 4)
+2024-12-18 23:09:48,256 [] [main] INFO (com.evolveum.midpoint.init.AuditFactory): Getting factory 'com.evolveum.midpoint.audit.impl.LoggerAuditServiceFactory'
+2024-12-18 23:09:48,257 [] [main] INFO (com.evolveum.midpoint.init.AuditFactory): Getting factory 'com.evolveum.midpoint.repo.sqale.audit.SqaleAuditServiceFactory'
+2024-12-18 23:09:48,259 [] [main] INFO (com.evolveum.midpoint.repo.sqale.audit.SqaleAuditServiceFactory): Initializing SQL audit service factory.
+2024-12-18 23:09:48,260 [] [main] INFO (com.evolveum.midpoint.repo.sqale.audit.SqaleAuditServiceFactory): SQL audit service will use default repository configuration.
+2024-12-18 23:09:48,346 [] [main] INFO (com.evolveum.midpoint.repo.sqlbase.perfmon.SqlPerformanceMonitorImpl): SQL Performance Monitor initialized (level = 4)
+2024-12-18 23:09:48,358 [] [main] INFO (com.evolveum.midpoint.repo.sqale.audit.SqaleAuditServiceFactory): SQL audit service factory initialization complete.
+2024-12-18 23:09:48,641 [] [main] INFO (com.evolveum.midpoint.schema.cache.CacheConfigurationManager): Creating initial caching configuration based on default caching profile (system configuration is not known at this moment)
+2024-12-18 23:09:51,056 [] [main] INFO (com.evolveum.midpoint.task.quartzimpl.UpAndDown): Task Manager initialization.
+2024-12-18 23:09:51,075 [] [main] INFO (com.evolveum.midpoint.task.quartzimpl.NodeIdComputer): Using default node ID 'DefaultNode'
+2024-12-18 23:09:51,091 [] [main] INFO (com.evolveum.midpoint.task.quartzimpl.UpAndDown): Task Manager: Quartz Job Store: in-memory, NOT clustered. Threads: 10
+2024-12-18 23:09:51,197 [] [main] WARN (com.evolveum.midpoint.common.CachedResourceBundleMessageSource): ResourceBundle [Midpoint] not found for MessageSource: Can't find bundle for base name Midpoint, locale en_US
+2024-12-18 23:09:51,201 [] [main] WARN (com.evolveum.midpoint.common.CachedResourceBundleMessageSource): ResourceBundle [schema] not found for MessageSource: Can't find bundle for base name schema, locale en_US
+2024-12-18 23:09:51,813 [] [main] INFO (com.evolveum.midpoint.task.quartzimpl.cluster.NodeRegistrar): Registering this node in the repository as DefaultNode at 43356574b8de
+2024-12-18 23:09:54,978 [] [main] INFO (com.evolveum.midpoint.task.quartzimpl.quartz.QuartzInitializationHelper): Initializing Quartz scheduler (but not starting it yet).
+2024-12-18 23:09:55,452 [] [main] INFO (com.evolveum.midpoint.task.quartzimpl.quartz.QuartzInitializationHelper): ... Quartz scheduler initialized.
+2024-12-18 23:09:55,453 [] [main] INFO (com.evolveum.midpoint.task.quartzimpl.quartz.LocalScheduler): Quartz scheduler execution limits set to: {null=null, DefaultNode=null, *=0} (were: null)
+2024-12-18 23:09:55,461 [TASK_MANAGER] [main] INFO (com.evolveum.midpoint.task.quartzimpl.quartz.TaskSynchronizer): Synchronizing Quartz job store with midPoint repository.
+2024-12-18 23:09:55,529 [TASK_MANAGER] [main] INFO (com.evolveum.midpoint.task.quartzimpl.quartz.TaskSynchronizer): Synchronization of midpoint and Quartz task store finished. 0 task(s) existing in midPoint repository successfully processed, resulting in 0 updated Quartz job(s). 0 task(s) removed from Quartz job store. Processing of 0 task(s) failed.
+2024-12-18 23:09:55,530 [] [main] INFO (com.evolveum.midpoint.task.quartzimpl.UpAndDown): Task Manager initialized
+2024-12-18 23:10:08,508 [] [main] INFO (com.evolveum.midpoint.model.impl.security.GuiProfiledPrincipalManagerImpl): Registering as cache listener
+2024-12-18 23:10:09,900 [] [main] WARN (com.evolveum.midpoint.model.common.expression.script.jsr223.Jsr223ScriptEvaluator): The JSR-223 scripting engine for 'JavaScript' was not found
+2024-12-18 23:10:10,038 [] [main] WARN (com.evolveum.midpoint.model.common.expression.script.jsr223.Jsr223ScriptEvaluator): The JSR-223 scripting engine for 'python' was not found
+2024-12-18 23:10:49,599 [] [main] INFO (com.evolveum.midpoint.schema.internals.InternalsConfig): Default setting for shadow caching: fromSystemConfiguration
+2024-12-18 23:10:50,753 [] [main] INFO (com.evolveum.midpoint.provisioning.ucf.impl.connid.ConnectorFactoryConnIdImpl): Discovered ICF bundle on CLASSPATH: com.evolveum.polygon.connector-ldap version: 3.8
+2024-12-18 23:10:53,196 [] [main] INFO (com.evolveum.midpoint.provisioning.ucf.impl.connid.ConnectorFactoryConnIdImpl): Discovered ICF bundle on CLASSPATH: com.evolveum.polygon.connector-databasetable version: 1.5.2.0
+2024-12-18 23:10:53,382 [] [main] INFO (com.evolveum.midpoint.provisioning.ucf.impl.connid.ConnectorFactoryConnIdImpl): Discovered ICF bundle on CLASSPATH: com.evolveum.polygon.connector-csv version: 2.8
+2024-12-18 23:10:56,611 [] [main] INFO (com.evolveum.midpoint.wf.impl.hook.WfHook): Workflow change hook was registered.
+2024-12-18 23:10:57,444 [] [main] INFO (com.evolveum.midpoint.init.RepoInitialSetup): Repository post initialization.
+2024-12-18 23:10:57,460 [] [main] INFO (com.evolveum.midpoint.init.RepoInitialSetup): Repository post initialization finished successfully.
+2024-12-18 23:10:57,475 [] [main] INFO (com.evolveum.midpoint.init.RepoCacheInitialSetup): Repository cache post initialization.
+2024-12-18 23:10:58,039 [] [main] INFO (com.evolveum.midpoint.repo.cache.global.GlobalObjectCache): Created global repository object cache with a capacity of 9223372036854775807 objects
+2024-12-18 23:10:58,042 [] [main] INFO (com.evolveum.midpoint.repo.cache.global.GlobalVersionCache): Created global repository object version cache with a capacity of 9223372036854775807 objects
+2024-12-18 23:10:58,045 [] [main] INFO (com.evolveum.midpoint.repo.cache.global.GlobalQueryCache): Created global repository query cache with a capacity of 9223372036854775807 queries
+2024-12-18 23:10:58,045 [] [main] INFO (com.evolveum.midpoint.init.RepoCacheInitialSetup): Repository cache post initialization finished successfully.
+2024-12-18 23:10:58,053 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial object import (if necessary).
+2024-12-18 23:10:58,679 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 000-system-configuration.xml.
+2024-12-18 23:10:58,735 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference globalSecurityPolicyRef refers to a non-existing object 00000000-0000-0000-0000-000000000120
+2024-12-18 23:10:58,756 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000344
+2024-12-18 23:10:58,792 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000340
+2024-12-18 23:10:58,798 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000341
+2024-12-18 23:10:58,808 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000342
+2024-12-18 23:10:58,812 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000345
+2024-12-18 23:10:58,831 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000501
+2024-12-18 23:10:58,841 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000502
+2024-12-18 23:10:58,846 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000503
+2024-12-18 23:10:58,849 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000504
+2024-12-18 23:10:58,854 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000505
+2024-12-18 23:10:58,870 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000506
+2024-12-18 23:10:58,880 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0002-000000000007
+2024-12-18 23:10:58,884 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000508
+2024-12-18 23:10:58,893 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000509
+2024-12-18 23:10:58,914 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000510
+2024-12-18 23:10:58,923 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000511
+2024-12-18 23:10:58,928 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000512
+2024-12-18 23:10:58,932 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000513
+2024-12-18 23:10:58,952 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000514
+2024-12-18 23:10:58,959 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000515
+2024-12-18 23:10:58,970 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000516
+2024-12-18 23:10:58,976 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000517
+2024-12-18 23:10:58,983 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000518
+2024-12-18 23:10:59,001 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000519
+2024-12-18 23:10:59,007 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000522
+2024-12-18 23:10:59,018 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000530
+2024-12-18 23:10:59,030 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000531
+2024-12-18 23:10:59,037 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000532
+2024-12-18 23:10:59,041 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000533
+2024-12-18 23:10:59,045 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000520
+2024-12-18 23:10:59,047 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000521
+2024-12-18 23:10:59,051 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000528
+2024-12-18 23:10:59,064 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000529
+2024-12-18 23:10:59,082 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000170
+2024-12-18 23:10:59,101 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000171
+2024-12-18 23:10:59,110 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000328
+2024-12-18 23:10:59,114 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000321
+2024-12-18 23:10:59,121 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000329
+2024-12-18 23:10:59,125 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000700
+2024-12-18 23:10:59,128 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000701
+2024-12-18 23:10:59,131 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000705
+2024-12-18 23:10:59,144 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000702
+2024-12-18 23:10:59,152 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0001-000000000340
+2024-12-18 23:10:59,156 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000330
+2024-12-18 23:10:59,161 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000331
+2024-12-18 23:10:59,168 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000523
+2024-12-18 23:10:59,173 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000534
+2024-12-18 23:10:59,177 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0000-000000000535
+2024-12-18 23:10:59,198 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0001-000000000017
+2024-12-18 23:10:59,223 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference configurableDashboardRef refers to a non-existing object 00000000-0000-0000-0001-000000000001
+2024-12-18 23:11:00,411 [REPOSITORY] [main] INFO (com.evolveum.midpoint.audit.log): 2024-12-18T23:11:00.361+0000 eid=1734563460361-54791-1, et=ADD_OBJECT, es=REQUEST, sid=1734563458058-54791-1, rid=a490017e-97a6-41d8-9c42-b52b737e05a1, tid=1734563458058-54791-1, toid=null, hid=null, nid=DefaultNode, raddr=null, I=null, EP=UserType:00000000-0000-0000-0000-000000000002(user), epm=FULL_ELEVATION, T=SystemConfigurationType:00000000-0000-0000-0000-000000000001(systemConfiguration), TO=null, D=[00000000-0000-0000-0000-000000000001:ADD], ch=http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init, o=null, p=null, m=
+2024-12-18 23:11:02,844 [] [main] INFO (com.evolveum.midpoint.common.LoggingConfigurationManager): Applying logging configuration (system configuration version 0)
+2024-12-18 23:11:05,694 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created systemConfiguration:00000000-0000-0000-0000-000000000001(SystemConfiguration) as part of initial import
+2024-12-18 23:11:05,858 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 010-value-policy.xml.
+2024-12-18 23:11:06,378 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created valuePolicy:00000000-0000-0000-0000-000000000003(Default Password Policy) as part of initial import
+2024-12-18 23:11:06,406 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 015-security-policy.xml.
+2024-12-18 23:11:07,025 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created securityPolicy:00000000-0000-0000-0000-000000000120(Default Security Policy) as part of initial import
+2024-12-18 23:11:07,041 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 020-archetype-system-user.xml.
+2024-12-18 23:11:08,377 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000300(System user) as part of initial import
+2024-12-18 23:11:08,409 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 021-archetype-system-role.xml.
+2024-12-18 23:11:08,861 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000320(System role) as part of initial import
+2024-12-18 23:11:08,954 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 022-archetype-business-role.xml.
+2024-12-18 23:11:09,351 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000321(Business role) as part of initial import
+2024-12-18 23:11:09,360 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 023-archetype-manual-provisioning-case.xml.
+2024-12-18 23:11:09,849 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000340(Manual provisioning case) as part of initial import
+2024-12-18 23:11:09,868 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 024-archetype-operation-request.xml.
+2024-12-18 23:11:10,412 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000341(Operation request) as part of initial import
+2024-12-18 23:11:10,456 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 025-archetype-approval-case.xml.
+2024-12-18 23:11:10,805 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000342(Approval case) as part of initial import
+2024-12-18 23:11:10,828 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 026-archetype-trace.xml.
+2024-12-18 23:11:11,188 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000343(Trace) as part of initial import
+2024-12-18 23:11:11,217 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 027-archetype-correlation-case.xml.
+2024-12-18 23:11:11,538 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000345(Correlation case) as part of initial import
+2024-12-18 23:11:11,560 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 028-archetype-application-role.xml.
+2024-12-18 23:11:11,903 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000328(Application role) as part of initial import
+2024-12-18 23:11:11,930 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 029-archetype-application.xml.
+2024-12-18 23:11:11,937 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0001-000000000016
+2024-12-18 23:11:12,647 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000329(Application) as part of initial import
+2024-12-18 23:11:12,668 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 030-role-superuser.xml.
+2024-12-18 23:11:12,771 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference targetRef refers to a non-existing object 00000000-0000-0000-0000-000000000332
+2024-12-18 23:11:13,083 [MODEL] [main] ERROR (com.evolveum.midpoint.model.impl.lens.assignments.TargetsEvaluation): Referenced object not found in assignment target reference in delta for role:00000000-0000-0000-0000-000000000004(Superuser), reason: Object of type 'PolicyType' with OID '00000000-0000-0000-0000-000000000332' was not found. (class com.evolveum.midpoint.util.exception.ObjectNotFoundException)
+2024-12-18 23:11:13,444 [MODEL] [main] ERROR (com.evolveum.midpoint.model.impl.lens.assignments.TargetsEvaluation): Referenced object not found in assignment target reference in role:00000000-0000-0000-0000-000000000004(Superuser), reason: Object of type 'PolicyType' with OID '00000000-0000-0000-0000-000000000332' was not found. (class com.evolveum.midpoint.util.exception.ObjectNotFoundException)
+2024-12-18 23:11:13,625 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created role:00000000-0000-0000-0000-000000000004(Superuser) as part of initial import
+2024-12-18 23:11:13,680 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 040-role-enduser.xml.
+2024-12-18 23:11:14,432 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created role:00000000-0000-0000-0000-000000000008(End user) as part of initial import
+2024-12-18 23:11:14,448 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 041-role-approver.xml.
+2024-12-18 23:11:15,231 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created role:00000000-0000-0000-0000-00000000000a(Approver) as part of initial import
+2024-12-18 23:11:15,262 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 042-role-reviewer.xml.
+2024-12-18 23:11:16,174 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created role:00000000-0000-0000-0000-00000000000b(Reviewer) as part of initial import
+2024-12-18 23:11:16,233 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 043-role-delegator.xml.
+2024-12-18 23:11:17,083 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created role:00000000-0000-0000-0000-00000000000c(Delegator) as part of initial import
+2024-12-18 23:11:17,146 [] [main] WARN (com.evolveum.midpoint.init.DataImport): Please change administrator password  after first login.
+2024-12-18 23:11:17,147 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 050-user-administrator.xml.
+2024-12-18 23:11:17,419 [MODEL] [main] ERROR (com.evolveum.midpoint.model.impl.lens.assignments.TargetsEvaluation): Referenced object not found in assignment target reference in role:00000000-0000-0000-0000-000000000004(Superuser) in delta for user:00000000-0000-0000-0000-000000000002(administrator), reason: Object of type 'PolicyType' with OID '00000000-0000-0000-0000-000000000332' was not found. (class com.evolveum.midpoint.util.exception.ObjectNotFoundException)
+2024-12-18 23:11:28,895 [MODEL] [main] ERROR (com.evolveum.midpoint.model.impl.lens.assignments.TargetsEvaluation): Referenced object not found in assignment target reference in role:00000000-0000-0000-0000-000000000004(Superuser) in user:00000000-0000-0000-0000-000000000002(administrator), reason: Object of type 'PolicyType' with OID '00000000-0000-0000-0000-000000000332' was not found. (class com.evolveum.midpoint.util.exception.ObjectNotFoundException)
+2024-12-18 23:11:29,113 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created user:00000000-0000-0000-0000-000000000002(administrator) as part of initial import
+2024-12-18 23:11:29,140 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 059-archetype-report.xml.
+2024-12-18 23:11:29,580 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000172(Report) as part of initial import
+2024-12-18 23:11:29,597 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 060-archetype-report-dashboard.xml.
+2024-12-18 23:11:30,199 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000170(Dashboard report) as part of initial import
+2024-12-18 23:11:30,279 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 061-archetype-report-collection.xml.
+2024-12-18 23:11:30,755 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000171(Collection report) as part of initial import
+2024-12-18 23:11:30,781 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 062-archetype-classification.xml.
+2024-12-18 23:11:31,592 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000330(Classification) as part of initial import
+2024-12-18 23:11:31,657 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 063-archetype-clearance.xml.
+2024-12-18 23:11:32,673 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000331(Clearance) as part of initial import
+2024-12-18 23:11:32,920 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 090-report-audit.xml.
+2024-12-18 23:11:33,019 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0001-000000000284
+2024-12-18 23:11:34,150 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created report:00000000-0000-0000-0000-000000000080(All audit records report) as part of initial import
+2024-12-18 23:11:34,231 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 100-report-reconciliation.xml.
+2024-12-18 23:11:34,255 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0001-000000000008
+2024-12-18 23:11:35,217 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created report:00000000-0000-0000-0000-000000000100(Reconciliation report) as part of initial import
+2024-12-18 23:11:35,234 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 110-report-user-list.xml.
+2024-12-18 23:11:35,956 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created report:00000000-0000-0000-0000-000000000110(Users in MidPoint) as part of initial import
+2024-12-18 23:11:36,068 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 130-report-certification-definitions.xml.
+2024-12-18 23:11:36,706 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created report:00000000-0000-0000-0000-000000000130(Certification definitions report) as part of initial import
+2024-12-18 23:11:36,730 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 140-report-certification-campaigns.xml.
+2024-12-18 23:11:36,742 [MODEL] [main] WARN (com.evolveum.midpoint.model.impl.util.ModelImplUtils): Reference collectionRef refers to a non-existing object 00000000-0000-0000-0001-000000000280
+2024-12-18 23:11:37,263 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created report:00000000-0000-0000-0000-000000000140(Certification campaigns report) as part of initial import
+2024-12-18 23:11:37,296 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 150-report-certification-cases.xml.
+2024-12-18 23:11:37,810 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created report:00000000-0000-0000-0000-000000000150(Certification cases report) as part of initial import
+2024-12-18 23:11:37,866 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 160-report-certification-work-items.xml.
+2024-12-18 23:11:38,502 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created report:00000000-0000-0000-0000-000000000160(Certification work items report) as part of initial import
+2024-12-18 23:11:38,528 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 170-report-simulation-objects.xml.
+2024-12-18 23:11:38,948 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created report:00000000-0000-0000-0000-286d76cea7c5(Simulation report: Objects) as part of initial import
+2024-12-18 23:11:38,986 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 171-report-simulation-objects-with-metrics.xml.
+2024-12-18 23:11:39,341 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created report:00000000-0000-0000-0000-616a5c5dbca8(Simulation report: Objects with metrics) as part of initial import
+2024-12-18 23:11:39,368 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 172-report-simulation-items-changed.xml.
+2024-12-18 23:11:39,794 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created report:00000000-0000-0000-0000-ea32deff43df(Simulation report: Items changed) as part of initial import
+2024-12-18 23:11:39,834 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 173-report-simulation-values-changed.xml.
+2024-12-18 23:11:40,352 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created report:00000000-0000-0000-0000-61bc8211947c(Simulation report: Values changed) as part of initial import
+2024-12-18 23:11:40,374 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 180-report-simulation-results.xml.
+2024-12-18 23:11:40,796 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created report:00000000-0000-0000-0000-97631b84fde7(Simulation report: Results) as part of initial import
+2024-12-18 23:11:40,838 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 200-lookup-languages.xml.
+2024-12-18 23:11:41,215 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created lookupTable:00000000-0000-0000-0000-000000000200(Languages) as part of initial import
+2024-12-18 23:11:41,241 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 200-report-indirect-assignments.xml.
+2024-12-18 23:11:41,661 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created report:00000000-0000-0000-0000-b8249b79d2b5(IGA: Who has access to what and why) as part of initial import
+2024-12-18 23:11:41,667 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 210-lookup-locales.xml.
+2024-12-18 23:11:41,911 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created lookupTable:00000000-0000-0000-0000-000000000210(Locales) as part of initial import
+2024-12-18 23:11:42,008 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 220-lookup-timezones.xml.
+2024-12-18 23:11:44,234 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created lookupTable:00000000-0000-0000-0000-000000000220(Timezones) as part of initial import
+2024-12-18 23:11:44,258 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 230-lookup-lifecycle-state.xml.
+2024-12-18 23:11:44,850 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created lookupTable:00000000-0000-0000-0000-000000000230(Lifecycle States) as part of initial import
+2024-12-18 23:11:44,858 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 240-lookup-state.xml.
+2024-12-18 23:11:45,424 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created lookupTable:00000000-0000-0000-0000-000000000240(States) as part of initial import
+2024-12-18 23:11:45,433 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 250-object-collection-resource-all.xml.
+2024-12-18 23:11:45,759 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created objectCollection:00000000-0000-0000-0001-000000000006(All resources) as part of initial import
+2024-12-18 23:11:45,800 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 251-object-collection-resource-up.xml.
+2024-12-18 23:11:46,721 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created objectCollection:00000000-0000-0000-0001-000000000003(Resources up) as part of initial import
+2024-12-18 23:11:46,730 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 252-object-collection-application-role.xml.
+2024-12-18 23:11:47,119 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created objectCollection:00000000-0000-0000-0001-000000000016(Application roles) as part of initial import
+2024-12-18 23:11:47,127 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 253-object-collection-application.xml.
+2024-12-18 23:11:47,326 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created objectCollection:00000000-0000-0000-0001-000000000017(Applications) as part of initial import
+2024-12-18 23:11:47,332 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 260-object-collection-task-all.xml.
+2024-12-18 23:11:47,426 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created objectCollection:00000000-0000-0000-0001-000000000007(All tasks) as part of initial import
+2024-12-18 23:11:47,432 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 261-object-collection-task-active.xml.
+2024-12-18 23:11:47,597 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created objectCollection:00000000-0000-0000-0001-000000000005(Active tasks) as part of initial import
+2024-12-18 23:11:47,607 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 262-object-collection-task-report.xml.
+2024-12-18 23:11:47,860 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created objectCollection:00000000-0000-0000-0002-000000000007(Report tasks) as part of initial import
+2024-12-18 23:11:47,890 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 263-object-collection-task-certification.xml.
+2024-12-18 23:11:48,087 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created objectCollection:00000000-0000-0000-0002-000000000008(Certification tasks) as part of initial import
+2024-12-18 23:11:48,115 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 270-object-collection-audit.xml.
+2024-12-18 23:11:48,343 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created objectCollection:00000000-0000-0000-0001-000000000284(All audit records) as part of initial import
+2024-12-18 23:11:48,352 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 271-object-collection-audit-24h.xml.
+2024-12-18 23:11:48,611 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created objectCollection:00000000-0000-0000-0001-000000000285(Audit records in 24h) as part of initial import
+2024-12-18 23:11:48,619 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 272-object-collection-audit-errors-24h.xml.
+2024-12-18 23:11:48,852 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created objectCollection:00000000-0000-0000-0001-000000000004(Error audit records in 24h) as part of initial import
+2024-12-18 23:11:48,862 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 273-object-collection-audit-modifications-24h.xml.
+2024-12-18 23:11:49,090 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created objectCollection:00000000-0000-0000-0001-000000000002(Modification audit records in 24h) as part of initial import
+2024-12-18 23:11:49,105 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 280-object-collection-certification-campaign-all.xml.
+2024-12-18 23:11:49,466 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created objectCollection:00000000-0000-0000-0001-000000000280(All certification campaigns) as part of initial import
+2024-12-18 23:11:49,526 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 290-object-collection-shadow-all.xml.
+2024-12-18 23:11:50,043 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created objectCollection:00000000-0000-0000-0001-000000000008(All shadows) as part of initial import
+2024-12-18 23:11:50,094 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 300-classification-privileged-access.xml.
+2024-12-18 23:11:51,557 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created policy:00000000-0000-0000-0000-000000000332(Privileged access) as part of initial import
+2024-12-18 23:11:51,623 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 310-dashboard-admin.xml.
+2024-12-18 23:11:52,554 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created dashboard:00000000-0000-0000-0001-000000000001(admin-dashboard) as part of initial import
+2024-12-18 23:11:52,559 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 330-object-collection-my-cases.xml.
+2024-12-18 23:11:52,954 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created objectCollection:00000000-0000-0000-0000-000000000344(My cases) as part of initial import
+2024-12-18 23:11:53,089 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 340-object-collection-resource-templates.xml.
+2024-12-18 23:11:54,026 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created objectCollection:00000000-0000-0000-0001-000000000340(All resource templates) as part of initial import
+2024-12-18 23:11:54,079 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 352-suspicious-objects.xml.
+2024-12-18 23:11:54,601 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created objectCollection:00000000-0000-0000-0001-000000000352(Suspicious objects) as part of initial import
+2024-12-18 23:11:54,633 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 353-users-with-sod-violations.xml.
+2024-12-18 23:11:55,030 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created objectCollection:00000000-0000-0000-0001-000000000353(Users with SoD violations) as part of initial import
+2024-12-18 23:11:55,090 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 354-roles-privileged.xml.
+2024-12-18 23:11:55,535 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created objectCollection:00000000-0000-0000-0001-000000000354(Privileged roles) as part of initial import
+2024-12-18 23:11:55,582 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 357-suspicious-roles.xml.
+2024-12-18 23:11:56,155 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created objectCollection:00000000-0000-0000-0001-000000000357(Suspicious roles) as part of initial import
+2024-12-18 23:11:56,219 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 358-suspicious-users.xml.
+2024-12-18 23:11:57,203 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created objectCollection:00000000-0000-0000-0001-000000000358(Suspicious users) as part of initial import
+2024-12-18 23:11:57,651 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 380-object-template-person.xml.
+2024-12-18 23:11:58,892 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created objectTemplate:00000000-0000-0000-0000-000000000380(Person Object Template) as part of initial import
+2024-12-18 23:11:59,165 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 501-archetype-task-reconciliation.xml.
+2024-12-18 23:12:00,811 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000501(Reconciliation task) as part of initial import
+2024-12-18 23:12:00,981 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 502-archetype-task-recomputation.xml.
+2024-12-18 23:12:02,533 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000502(Recomputation task) as part of initial import
+2024-12-18 23:12:02,598 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 503-archetype-task-import.xml.
+2024-12-18 23:12:03,939 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000503(Import task) as part of initial import
+2024-12-18 23:12:04,017 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 504-archetype-task-live-sync.xml.
+2024-12-18 23:12:05,701 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000504(Live synchronization task) as part of initial import
+2024-12-18 23:12:05,768 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 505-archetype-task-async-update.xml.
+2024-12-18 23:12:06,667 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000505(Asynchronous update task) as part of initial import
+2024-12-18 23:12:06,707 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 506-archetype-task-cleanup.xml.
+2024-12-18 23:12:07,968 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000506(Cleanup task) as part of initial import
+2024-12-18 23:12:08,005 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 507-archetype-task-report.xml.
+2024-12-18 23:12:08,605 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000507(Report task) as part of initial import
+2024-12-18 23:12:08,626 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 508-archetype-task-single-bulk-action.xml.
+2024-12-18 23:12:09,105 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000508(Single action task) as part of initial import
+2024-12-18 23:12:09,137 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 509-archetype-task-iterative-bulk-action.xml.
+2024-12-18 23:12:09,825 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000509(Iterative action task) as part of initial import
+2024-12-18 23:12:09,906 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 510-archetype-task-report-import-classic.xml.
+2024-12-18 23:12:10,708 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000510(Report import task) as part of initial import
+2024-12-18 23:12:10,745 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 511-archetype-task-report-export-classic.xml.
+2024-12-18 23:12:11,482 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000511(Report export task) as part of initial import
+2024-12-18 23:12:11,540 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 512-archetype-task-report-export-distributed.xml.
+2024-12-18 23:12:12,213 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000512(Distributed report export task) as part of initial import
+2024-12-18 23:12:13,005 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 513-archetype-task-shadow-integrity-check.xml.
+2024-12-18 23:12:13,736 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000513(Shadow integrity check task) as part of initial import
+2024-12-18 23:12:13,743 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 514-archetype-task-shadows-refresh.xml.
+2024-12-18 23:12:14,042 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000514(Refresh shadows task) as part of initial import
+2024-12-18 23:12:14,051 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 515-archetype-task-objects-delete.xml.
+2024-12-18 23:12:14,186 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000515(Delete objects task) as part of initial import
+2024-12-18 23:12:14,192 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 516-archetype-task-shadows-delete-long-time-not-updated.xml.
+2024-12-18 23:12:14,337 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000516(Delete long time not updated shadows task) as part of initial import
+2024-12-18 23:12:14,343 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 517-archetype-task-execute-change.xml.
+2024-12-18 23:12:14,513 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000517(Execute change task (one delta applicable for many objects)) as part of initial import
+2024-12-18 23:12:14,519 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 518-archetype-task-execute-deltas.xml.
+2024-12-18 23:12:15,155 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000518(Execute deltas task (background processing for change execution)) as part of initial import
+2024-12-18 23:12:15,220 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 519-archetype-task-reindex-repository.xml.
+2024-12-18 23:12:15,618 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000519(Reindex repository task) as part of initial import
+2024-12-18 23:12:15,629 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 520-archetype-task-certification.xml.
+2024-12-18 23:12:15,955 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000520(Certification-related task) as part of initial import
+2024-12-18 23:12:15,971 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 521-archetype-task-approval.xml.
+2024-12-18 23:12:16,309 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000521(Approval-related task) as part of initial import
+2024-12-18 23:12:16,318 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 522-archetype-task-object-integrity-check.xml.
+2024-12-18 23:12:16,543 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000522(Object integrity check task) as part of initial import
+2024-12-18 23:12:16,560 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 523-archetype-task-shadow-reclassification.xml.
+2024-12-18 23:12:16,848 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000523(Shadow reclassification task) as part of initial import
+2024-12-18 23:12:16,873 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 528-archetype-task-util.xml.
+2024-12-18 23:12:17,258 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000528(Utility task) as part of initial import
+2024-12-18 23:12:17,280 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 529-archetype-task-system.xml.
+2024-12-18 23:12:17,571 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000529(System task) as part of initial import
+2024-12-18 23:12:17,584 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 530-archetype-task-validity.xml.
+2024-12-18 23:12:17,960 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000530(Validity scanner task) as part of initial import
+2024-12-18 23:12:17,991 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 531-archetype-task-trigger.xml.
+2024-12-18 23:12:18,400 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000531(Trigger scanner task) as part of initial import
+2024-12-18 23:12:18,407 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 532-archetype-task-propagation.xml.
+2024-12-18 23:12:18,807 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000532(Provisioning propagation task (one resource)) as part of initial import
+2024-12-18 23:12:18,839 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 533-archetype-task-multi-propagation.xml.
+2024-12-18 23:12:19,109 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000533(Provisioning propagation task (many resources)) as part of initial import
+2024-12-18 23:12:19,114 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 534-archetype-task-certification-open-next-stage.xml.
+2024-12-18 23:12:19,220 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000534(Certification-campaign-open-next-stage task) as part of initial import
+2024-12-18 23:12:19,228 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 535-archetype-task-certification-remediation.xml.
+2024-12-18 23:12:19,415 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000535(Certification-remediation-related task) as part of initial import
+2024-12-18 23:12:19,418 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 536-archetype-task-certification-start-campaign.xml.
+2024-12-18 23:12:19,581 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000536(Certification-campaign-start-related task) as part of initial import
+2024-12-18 23:12:19,590 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 537-archetype-task-certification-close-current-stage.xml.
+2024-12-18 23:12:19,751 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000537(Certification-campaign-close-current-stage task) as part of initial import
+2024-12-18 23:12:19,766 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 538-archetype-task-certification-reiterate-campaign.xml.
+2024-12-18 23:12:20,019 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000538(Certification-campaign-reiterate task) as part of initial import
+2024-12-18 23:12:20,033 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 550-task-cleanup.xml.
+2024-12-18 23:12:22,206 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created task:00000000-0000-0000-0000-000000000005(Cleanup) as part of initial import
+2024-12-18 23:12:22,226 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 560-task-validity.xml.
+2024-12-18 23:12:22,856 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created task:00000000-0000-0000-0000-000000000006(Validity Scanner) as part of initial import
+2024-12-18 23:12:22,869 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 570-task-trigger.xml.
+2024-12-18 23:12:23,143 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created task:00000000-0000-0000-0000-000000000007(Trigger Scanner) as part of initial import
+2024-12-18 23:12:23,154 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 600-origin-internal.xml.
+2024-12-18 23:12:23,407 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created service:00000000-0000-0000-0000-000000000600(Internal) as part of initial import
+2024-12-18 23:12:23,412 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 601-origin-user-entry.xml.
+2024-12-18 23:12:23,532 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created service:00000000-0000-0000-0000-000000000601(User entry) as part of initial import
+2024-12-18 23:12:23,535 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 610-service-identity-recovery.xml.
+2024-12-18 23:12:23,672 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created service:00000000-0000-0000-0000-000000000610(Identity recovery) as part of initial import
+2024-12-18 23:12:23,679 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 700-archetype-event-mark.xml.
+2024-12-18 23:12:23,816 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000700(Event mark) as part of initial import
+2024-12-18 23:12:23,831 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 701-archetype-object-mark.xml.
+2024-12-18 23:12:24,021 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000701(Object mark) as part of initial import
+2024-12-18 23:12:24,039 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 702-archetype-person.xml.
+2024-12-18 23:12:24,234 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000702(Person) as part of initial import
+2024-12-18 23:12:24,238 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 703-archetype-resource-template.xml.
+2024-12-18 23:12:24,435 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000703(Resource template) as part of initial import
+2024-12-18 23:12:24,441 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 705-archetype-shadow-policy-mark.xml.
+2024-12-18 23:12:24,687 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created archetype:00000000-0000-0000-0000-000000000705(Shadow policy mark) as part of initial import
+2024-12-18 23:12:24,695 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 710-mark-focus-activated.xml.
+2024-12-18 23:12:24,935 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000710(Focus activated) as part of initial import
+2024-12-18 23:12:24,960 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 711-mark-focus-deactivated.xml.
+2024-12-18 23:12:25,140 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000711(Focus deactivated) as part of initial import
+2024-12-18 23:12:25,144 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 712-mark-focus-renamed.xml.
+2024-12-18 23:12:25,326 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000712(Focus renamed) as part of initial import
+2024-12-18 23:12:25,330 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 713-mark-focus-assignment-changed.xml.
+2024-12-18 23:12:25,513 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000713(Focus assignments changed) as part of initial import
+2024-12-18 23:12:25,518 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 714-mark-focus-archetype-changed.xml.
+2024-12-18 23:12:25,708 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000714(Focus archetype changed) as part of initial import
+2024-12-18 23:12:25,719 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 715-mark-focus-parent-org-reference-changed.xml.
+2024-12-18 23:12:25,982 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000715(Focus parent organization reference changed) as part of initial import
+2024-12-18 23:12:25,986 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 716-mark-focus-role-membership-changed.xml.
+2024-12-18 23:12:26,213 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000716(Focus role membership changed) as part of initial import
+2024-12-18 23:12:26,233 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 730-mark-projection-activated.xml.
+2024-12-18 23:12:26,518 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000730(Projection activated) as part of initial import
+2024-12-18 23:12:26,528 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 731-mark-projection-deactivated.xml.
+2024-12-18 23:12:26,704 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000731(Projection deactivated) as part of initial import
+2024-12-18 23:12:26,707 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 732-mark-projection-renamed.xml.
+2024-12-18 23:12:26,855 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000732(Projection renamed) as part of initial import
+2024-12-18 23:12:26,867 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 733-mark-projection-identifier-changed.xml.
+2024-12-18 23:12:27,059 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000733(Projection identifier changed) as part of initial import
+2024-12-18 23:12:27,063 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 734-mark-projection-entitlement-changed.xml.
+2024-12-18 23:12:27,248 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000734(Projection entitlement changed) as part of initial import
+2024-12-18 23:12:27,252 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 735-mark-projection-password-changed.xml.
+2024-12-18 23:12:27,428 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000735(Projection password changed) as part of initial import
+2024-12-18 23:12:27,435 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 736-mark-shadow-classification-changed.xml.
+2024-12-18 23:12:27,661 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000736(Shadow classification changed) as part of initial import
+2024-12-18 23:12:27,666 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 737-mark-shadow-correlation-state-changed.xml.
+2024-12-18 23:12:27,913 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000737(Shadow correlation state changed) as part of initial import
+2024-12-18 23:12:27,918 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 738-mark-projection-resource-object-affected.xml.
+2024-12-18 23:12:28,193 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000738(Resource object affected) as part of initial import
+2024-12-18 23:12:28,200 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 800-mark-protected.xml.
+2024-12-18 23:12:28,522 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000800(Protected) as part of initial import
+2024-12-18 23:12:28,533 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 801-mark-decommission-later.xml.
+2024-12-18 23:12:28,741 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000801(Decommission later) as part of initial import
+2024-12-18 23:12:28,746 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 802-mark-correlate-later.xml.
+2024-12-18 23:12:29,010 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000802(Correlate later) as part of initial import
+2024-12-18 23:12:29,017 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 803-mark-do-not-touch.xml.
+2024-12-18 23:12:29,238 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000803(Do not touch) as part of initial import
+2024-12-18 23:12:29,242 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 804-mark-invalid-data.xml.
+2024-12-18 23:12:29,431 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000804(Invalid data) as part of initial import
+2024-12-18 23:12:29,434 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 805-mark-unmanaged.xml.
+2024-12-18 23:12:29,605 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000805(Unmanaged) as part of initial import
+2024-12-18 23:12:29,607 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 806-mark-managed.xml.
+2024-12-18 23:12:29,855 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000806(Managed) as part of initial import
+2024-12-18 23:12:29,870 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 811-exclusion-violation.xml.
+2024-12-18 23:12:30,125 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000811(Exclusion violation) as part of initial import
+2024-12-18 23:12:30,128 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 812-requirement-violation.xml.
+2024-12-18 23:12:30,359 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000812(Requirement violation) as part of initial import
+2024-12-18 23:12:30,362 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 813-underassigned.xml.
+2024-12-18 23:12:30,647 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000813(Underassigned) as part of initial import
+2024-12-18 23:12:30,652 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 814-overassigned.xml.
+2024-12-18 23:12:30,900 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000814(Overassigned) as part of initial import
+2024-12-18 23:12:30,906 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 815-object-modified.xml.
+2024-12-18 23:12:31,276 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000815(Object modified) as part of initial import
+2024-12-18 23:12:31,284 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 816-assignment-modified.xml.
+2024-12-18 23:12:31,566 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000816(Assignment modified) as part of initial import
+2024-12-18 23:12:31,574 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 817-has-assignment.xml.
+2024-12-18 23:12:31,942 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000817(Has assignment) as part of initial import
+2024-12-18 23:12:31,948 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 818-has-no-assignment.xml.
+2024-12-18 23:12:32,268 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000818(Has no assignment) as part of initial import
+2024-12-18 23:12:32,273 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 819-object-state.xml.
+2024-12-18 23:12:32,574 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000819(Object state) as part of initial import
+2024-12-18 23:12:32,588 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 820-assignment-state.xml.
+2024-12-18 23:12:32,894 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000820(Assignment state) as part of initial import
+2024-12-18 23:12:32,902 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 821-object-time-validity.xml.
+2024-12-18 23:12:33,209 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000821(Object time validity) as part of initial import
+2024-12-18 23:12:33,217 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 822-assignment-time-validity.xml.
+2024-12-18 23:12:33,571 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000822(Assignment time validity) as part of initial import
+2024-12-18 23:12:33,576 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Starting initial import of file 830-suspicious.xml.
+2024-12-18 23:12:33,988 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Created mark:00000000-0000-0000-0000-000000000830(Suspicious) as part of initial import
+2024-12-18 23:12:33,995 [] [main] INFO (com.evolveum.midpoint.init.InitialDataImport): Initial object import finished (147 objects imported, 0 errors, 0 skipped)
+2024-12-18 23:12:34,005 [] [main] INFO (com.evolveum.midpoint.init.ModelInitialSetup): Model post initialization.
+2024-12-18 23:12:34,038 [MODEL] [main] WARN (com.evolveum.midpoint.repo.cache.global.GlobalObjectCache): Global object cache was already initialized -- ignoring this request.
+2024-12-18 23:12:34,039 [MODEL] [main] WARN (com.evolveum.midpoint.repo.cache.global.GlobalVersionCache): Global version cache was already initialized -- ignoring this request.
+2024-12-18 23:12:34,039 [MODEL] [main] WARN (com.evolveum.midpoint.repo.cache.global.GlobalQueryCache): Global query cache was already initialized -- ignoring this request.
+2024-12-18 23:12:35,572 [PROVISIONING] [main] INFO (com.evolveum.midpoint.provisioning.impl.resources.ConnectorManager): Discovered new connector connector:d77309ad-9a94-4315-9073-7a244d84acb0(ConnId org.identityconnectors.databasetable.DatabaseTableConnector v1.5.2.0)
+2024-12-18 23:12:35,620 [PROVISIONING] [main] INFO (com.evolveum.midpoint.provisioning.impl.resources.ConnectorManager): Discovered new connector connector:903b77e4-a77d-4bef-8178-d500e9a85ba6(ConnId com.evolveum.polygon.connector.ldap.ad.AdLdapConnector v3.8)
+2024-12-18 23:12:35,667 [PROVISIONING] [main] INFO (com.evolveum.midpoint.provisioning.impl.resources.ConnectorManager): Discovered new connector connector:5e41fb46-693f-4b63-bd23-749bfd605371(ConnId com.evolveum.polygon.connector.ldap.LdapConnector v3.8)
+2024-12-18 23:12:35,688 [PROVISIONING] [main] INFO (com.evolveum.midpoint.provisioning.impl.resources.ConnectorManager): Discovered new connector connector:6addc35f-24a8-4641-b9a6-dc911c225169(ConnId com.evolveum.polygon.connector.csv.CsvConnector v2.8)
+2024-12-18 23:12:42,622 [PROVISIONING] [main] INFO (com.evolveum.midpoint.provisioning.impl.resources.ConnectorManager): Discovered new connector connector:ab18e4d0-3d11-4c46-a9c7-6d7df049363b(Built-in AsyncProvisioningConnector v1.0.0)
+2024-12-18 23:12:42,649 [PROVISIONING] [main] INFO (com.evolveum.midpoint.provisioning.impl.resources.ConnectorManager): Discovered new connector connector:22488835-4542-4d14-8b06-4d7ac85d8348(Built-in ManualConnector v1.0.0)
+2024-12-18 23:12:42,663 [PROVISIONING] [main] INFO (com.evolveum.midpoint.provisioning.impl.resources.ConnectorManager): Discovered new connector connector:f0d1aac3-15ca-4fe0-9518-18e3332a27c0(Built-in AsyncUpdateConnector v1.0.0)
+2024-12-18 23:12:42,664 [PROVISIONING] [main] INFO (com.evolveum.midpoint.provisioning.impl.ProvisioningServiceImpl): Discovered local connector connector: Built-in AsyncProvisioningConnector v1.0.0 (OID:ab18e4d0-3d11-4c46-a9c7-6d7df049363b)
+2024-12-18 23:12:42,665 [PROVISIONING] [main] INFO (com.evolveum.midpoint.provisioning.impl.ProvisioningServiceImpl): Discovered local connector connector: Built-in AsyncUpdateConnector v1.0.0 (OID:f0d1aac3-15ca-4fe0-9518-18e3332a27c0)
+2024-12-18 23:12:42,666 [PROVISIONING] [main] INFO (com.evolveum.midpoint.provisioning.impl.ProvisioningServiceImpl): Discovered local connector connector: ConnId org.identityconnectors.databasetable.DatabaseTableConnector v1.5.2.0 (OID:d77309ad-9a94-4315-9073-7a244d84acb0)
+2024-12-18 23:12:42,667 [PROVISIONING] [main] INFO (com.evolveum.midpoint.provisioning.impl.ProvisioningServiceImpl): Discovered local connector connector: ConnId com.evolveum.polygon.connector.ldap.ad.AdLdapConnector v3.8 (OID:903b77e4-a77d-4bef-8178-d500e9a85ba6)
+2024-12-18 23:12:42,667 [PROVISIONING] [main] INFO (com.evolveum.midpoint.provisioning.impl.ProvisioningServiceImpl): Discovered local connector connector: Built-in ManualConnector v1.0.0 (OID:22488835-4542-4d14-8b06-4d7ac85d8348)
+2024-12-18 23:12:42,668 [PROVISIONING] [main] INFO (com.evolveum.midpoint.provisioning.impl.ProvisioningServiceImpl): Discovered local connector connector: ConnId com.evolveum.polygon.connector.ldap.LdapConnector v3.8 (OID:5e41fb46-693f-4b63-bd23-749bfd605371)
+2024-12-18 23:12:42,668 [PROVISIONING] [main] INFO (com.evolveum.midpoint.provisioning.impl.ProvisioningServiceImpl): Discovered local connector connector: ConnId com.evolveum.polygon.connector.csv.CsvConnector v2.8 (OID:6addc35f-24a8-4641-b9a6-dc911c225169)
+2024-12-18 23:12:42,669 [] [main] INFO (com.evolveum.midpoint.init.ModelInitialSetup): Model post initialization finished successfully.
+2024-12-18 23:12:42,720 [] [main] INFO (com.evolveum.midpoint.init.PostInitialDataImport): Starting initial object import (if necessary).
+2024-12-18 23:12:42,724 [] [main] INFO (com.evolveum.midpoint.init.PostInitialDataImport): Directory /opt/midpoint/var/ exists. Using it.
+2024-12-18 23:12:42,728 [] [main] INFO (com.evolveum.midpoint.init.PostInitialDataImport): Directory /opt/midpoint/var/post-initial-objects exists. Using it.
+2024-12-18 23:12:42,744 [] [main] INFO (com.evolveum.midpoint.init.PostInitialDataImport): Post-initial object import finished (0 objects imported, 0 scripts executed)
+2024-12-18 23:12:47,918 [] [main] INFO (org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver): Exposing 6 endpoints beneath base path '/actuator'
+2024-12-18 23:12:49,378 [] [main] WARN (org.springframework.security.config.annotation.web.builders.WebSecurity): You are asking Spring Security to ignore Ant [pattern='/model/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-12-18 23:12:49,380 [] [main] WARN (org.springframework.security.config.annotation.web.builders.WebSecurity): You are asking Spring Security to ignore Ant [pattern='/report']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-12-18 23:12:49,380 [] [main] WARN (org.springframework.security.config.annotation.web.builders.WebSecurity): You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-12-18 23:12:49,381 [] [main] WARN (org.springframework.security.config.annotation.web.builders.WebSecurity): You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-12-18 23:12:49,382 [] [main] WARN (org.springframework.security.config.annotation.web.builders.WebSecurity): You are asking Spring Security to ignore Ant [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-12-18 23:12:49,382 [] [main] WARN (org.springframework.security.config.annotation.web.builders.WebSecurity): You are asking Spring Security to ignore Ant [pattern='/fonts/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-12-18 23:12:49,383 [] [main] WARN (org.springframework.security.config.annotation.web.builders.WebSecurity): You are asking Spring Security to ignore Ant [pattern='/static/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-12-18 23:12:49,383 [] [main] WARN (org.springframework.security.config.annotation.web.builders.WebSecurity): You are asking Spring Security to ignore Ant [pattern='/static-web/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-12-18 23:12:49,384 [] [main] WARN (org.springframework.security.config.annotation.web.builders.WebSecurity): You are asking Spring Security to ignore Ant [pattern='/less/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-12-18 23:12:49,384 [] [main] WARN (org.springframework.security.config.annotation.web.builders.WebSecurity): You are asking Spring Security to ignore Ant [pattern='/wicket/resource/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-12-18 23:12:49,385 [] [main] WARN (org.springframework.security.config.annotation.web.builders.WebSecurity): You are asking Spring Security to ignore Ant [pattern='/favicon.ico']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-12-18 23:12:49,906 [] [main] INFO (org.apache.coyote.http11.Http11NioProtocol): Starting ProtocolHandler ["http-nio-8080"]
+2024-12-18 23:12:49,965 [] [main] INFO (org.springframework.boot.web.embedded.tomcat.TomcatWebServer): Tomcat started on port 8080 (http) with context path '/midpoint'
+2024-12-18 23:12:50,002 [] [main] INFO (com.evolveum.midpoint.web.boot.MidPointSpringApplication): Started MidPointSpringApplication in 274.404 seconds (process running for 290.435)
+2024-12-18 23:12:50,059 [] [main] INFO (com.evolveum.midpoint.task.quartzimpl.cluster.ClusterManager): Registering the node as started
+2024-12-18 23:12:50,086 [] [main] INFO (com.evolveum.midpoint.task.quartzimpl.cluster.NodeRegistrar): Found Tomcat JMX object 'Tomcat:type=Connector,port=8080': scheme = 'http', port = '8080'
+2024-12-18 23:12:50,091 [] [main] INFO (com.evolveum.midpoint.task.quartzimpl.cluster.NodeRegistrar): Changing node URL from null to http://43356574b8de:8080/midpoint
+2024-12-18 23:12:50,168 [] [ClusterManagerThread] INFO (com.evolveum.midpoint.task.quartzimpl.cluster.ClusterManager): ClusterManager thread starting.
+2024-12-18 23:12:50,169 [] [main] INFO (com.evolveum.midpoint.task.quartzimpl.quartz.LocalScheduler): Starting the Quartz scheduler
+2024-12-18 23:12:50,227 [] [main] INFO (org.quartz.core.QuartzScheduler): Scheduler midPointScheduler_$_DefaultNode started.
+2024-12-18 23:12:52,588 [] [midPointScheduler_Worker-1] INFO (com.evolveum.midpoint.repo.sqale.audit.SqaleAuditService): Audit cleanup, deleting records older than 2024-09-18T23:12:52.587Z.
+2024-12-18 23:12:52,611 [] [midPointScheduler_Worker-1] INFO (com.evolveum.midpoint.repo.sqale.audit.SqaleAuditService): Audit cleanup based on age finished; deleted 0 entries in 0 seconds.
+2024-12-18 23:12:52,612 [REPOSITORY] [midPointScheduler_Worker-1] INFO (com.evolveum.midpoint.model.impl.cleanup.CleanupPartialActivityRun): Audit records cleanup: Finished
+2024-12-18 23:12:52,905 [TASK_MANAGER] [midPointScheduler_Worker-1] INFO (com.evolveum.midpoint.task.quartzimpl.tasks.TaskCleaner): Starting cleanup for closed tasks deleting up to 2024-11-18T23:12:52.904Z (duration 'P1M').
+2024-12-18 23:12:52,932 [TASK_MANAGER] [midPointScheduler_Worker-1] INFO (com.evolveum.midpoint.task.quartzimpl.tasks.TaskCleaner): Task cleanup procedure finished. Successfully deleted 0 tasks; there were problems with deleting 0 tasks.
+2024-12-18 23:12:52,935 [REPOSITORY] [midPointScheduler_Worker-1] INFO (com.evolveum.midpoint.model.impl.cleanup.CleanupPartialActivityRun): Closed tasks: Finished
+2024-12-18 23:13:01,959 [] [http-nio-8080-exec-1] INFO (org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/midpoint]): Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-18 23:13:01,959 [] [http-nio-8080-exec-1] INFO (org.springframework.web.servlet.DispatcherServlet): Initializing Servlet 'dispatcherServlet'
+2024-12-18 23:13:01,966 [] [http-nio-8080-exec-1] INFO (org.springframework.web.servlet.DispatcherServlet): Completed initialization in 6 ms
+2024-12-18 23:16:18,063 [] [http-nio-8080-exec-10] WARN (com.evolveum.midpoint.common.CachedResourceBundleMessageSource): ResourceBundle [Midpoint] not found for MessageSource: Can't find bundle for base name Midpoint, locale en
+2024-12-18 23:16:18,094 [] [http-nio-8080-exec-10] WARN (com.evolveum.midpoint.common.CachedResourceBundleMessageSource): ResourceBundle [schema] not found for MessageSource: Can't find bundle for base name schema, locale en
+2024-12-18 23:20:48,689 [PROVISIONING] [http-nio-8080-exec-9] INFO (com.evolveum.midpoint.provisioning.impl.resources.ConnectorManager): Created new connector instance for connector:6addc35f-24a8-4641-b9a6-dc911c225169(ConnId com.evolveum.polygon.connector.csv.CsvConnector v2.8): com.evolveum.polygon.connector.csv.CsvConnector v2.8
