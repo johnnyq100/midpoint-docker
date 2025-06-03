@@ -1,6 +1,6 @@
-2024-12-23 23:11:25,623 [] [midPointScheduler_Worker-3] INFO (com.evolveum.midpoint.repo.sqale.audit.SqaleAuditService): Audit cleanup, deleting records older than 2024-09-23T23:11:25.622Z.
-2024-12-23 23:11:25,660 [] [midPointScheduler_Worker-3] INFO (com.evolveum.midpoint.repo.sqale.audit.SqaleAuditService): Audit cleanup based on age finished; deleted 0 entries in 0 seconds.
-2024-12-23 23:11:25,661 [REPOSITORY] [midPointScheduler_Worker-3] INFO (com.evolveum.midpoint.model.impl.cleanup.CleanupPartialActivityRun): Audit records cleanup: Finished
-2024-12-23 23:11:25,696 [TASK_MANAGER] [midPointScheduler_Worker-3] INFO (com.evolveum.midpoint.task.quartzimpl.tasks.TaskCleaner): Starting cleanup for closed tasks deleting up to 2024-11-23T23:11:25.694Z (duration 'P1M').
-2024-12-23 23:11:25,700 [TASK_MANAGER] [midPointScheduler_Worker-3] INFO (com.evolveum.midpoint.task.quartzimpl.tasks.TaskCleaner): Task cleanup procedure finished. Successfully deleted 0 tasks; there were problems with deleting 0 tasks.
-2024-12-23 23:11:25,700 [REPOSITORY] [midPointScheduler_Worker-3] INFO (com.evolveum.midpoint.model.impl.cleanup.CleanupPartialActivityRun): Closed tasks: Finished
+2025-02-26 15:44:47,644 [] [midPointScheduler_Worker-8] INFO (com.evolveum.midpoint.repo.sqale.audit.SqaleAuditService): Audit cleanup, deleting records older than 2024-11-26T15:44:47.643Z.
+2025-02-26 15:44:47,688 [] [midPointScheduler_Worker-8] INFO (com.evolveum.midpoint.repo.sqale.audit.SqaleAuditService): Audit cleanup based on age finished; deleted 0 entries in 0 seconds.
+2025-02-26 15:44:47,689 [REPOSITORY] [midPointScheduler_Worker-8] INFO (com.evolveum.midpoint.model.impl.cleanup.CleanupPartialActivityRun): Audit records cleanup: Finished
+2025-02-26 15:44:47,721 [TASK_MANAGER] [midPointScheduler_Worker-8] INFO (com.evolveum.midpoint.task.quartzimpl.tasks.TaskCleaner): Starting cleanup for closed tasks deleting up to 2025-01-26T15:44:47.718Z (duration 'P1M').
+2025-02-26 15:44:47,724 [TASK_MANAGER] [midPointScheduler_Worker-8] INFO (com.evolveum.midpoint.task.quartzimpl.tasks.TaskCleaner): Task cleanup procedure finished. Successfully deleted 0 tasks; there were problems with deleting 0 tasks.
+2025-02-26 15:44:47,725 [REPOSITORY] [midPointScheduler_Worker-8] INFO (com.evolveum.midpoint.model.impl.cleanup.CleanupPartialActivityRun): Closed tasks: Finished
